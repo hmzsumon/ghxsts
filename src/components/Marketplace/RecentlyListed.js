@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { recentlyListed } from '../../lib/data';
 
 const RecentlyListed = () => {
+	const [imgList, setImgList] = useState(recentlyListed);
 	return (
 		<RecentlyListedWrapper>
 			<div className='container-fluid'>
@@ -16,14 +17,46 @@ const RecentlyListed = () => {
 						<div className='arrow_icon col-md-1'>
 							<i className=' text-right fas fa-chevron-left'></i>
 						</div>
+
 						<div className='container gif_container col-md-10'>
-							{recentlyListed.map((gif) => (
-								<li key={gif.id}>
-									<img src={gif.img} alt='GIF' className='img-fluid' />
-									<p>{gif.gif_number}</p>
-								</li>
-							))}
+							<li>
+								<Link to='/details'>
+									<img src={imgList[0].img} alt='GIF' className='img-fluid' />
+								</Link>
+								<p>{imgList[0].gif_number}</p>
+							</li>
+							<li>
+								<Link to='/details'>
+									<img src={imgList[1].img} alt='GIF' className='img-fluid' />
+								</Link>
+								<p>{imgList[1].gif_number}</p>
+							</li>
+							<li>
+								<Link to='/details'>
+									<img src={imgList[2].img} alt='GIF' className='img-fluid' />
+								</Link>
+								<p>{imgList[2].gif_number}</p>
+							</li>
+							<li>
+								<Link to='/details'>
+									<img src={imgList[3].img} alt='GIF' className='img-fluid' />
+								</Link>
+								<p>{imgList[3].gif_number}</p>
+							</li>
+							<li>
+								<Link to='/details'>
+									<img src={imgList[4].img} alt='GIF' className='img-fluid' />
+								</Link>
+								<p>{imgList[4].gif_number}</p>
+							</li>
+							<li>
+								<Link to='/details'>
+									<img src={imgList[5].img} alt='GIF' className='img-fluid' />
+								</Link>
+								<p>{imgList[5].gif_number}</p>
+							</li>
 						</div>
+
 						<div className='arrow_icon col-md-1'>
 							<i class=' text-right  fas fa-chevron-right'></i>
 						</div>

@@ -6,6 +6,7 @@ import MyCollection from './components/MyCollection';
 
 import ViewMore from './components/ViewMore';
 import Marketplace from './components/Marketplace';
+import GhxstsDetails from './components/Marketplace/GhxstsDetails';
 
 // import ParticlesBackground from './lib/utils/ParticlesBackground';
 
@@ -20,6 +21,7 @@ function App() {
 					<Route path='/collection' component={MyCollection} />
 					<Route path='/marketplace' component={Marketplace} />
 					<Route path='/view_more' component={ViewMore} />
+					<Route path='/details' component={GhxstsDetails} />
 				</Switch>
 			</Layout>
 		</>
