@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
+import Layout from './components/Layout';
+import Test from './components/Test.js';
+import MyCollection from './components/MyCollection';
+
+import ViewMore from './components/ViewMore';
+import Marketplace from './components/Marketplace';
+
+// import ParticlesBackground from './lib/utils/ParticlesBackground';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			{/* <ParticlesBackground /> */}
+			<Layout>
+				<Switch>
+					<Route exact path='/' component={Home} />
+					<Route path='/test' component={Test} />
+					<Route path='/collection' component={MyCollection} />
+					<Route path='/marketplace' component={Marketplace} />
+					<Route path='/view_more' component={ViewMore} />
+				</Switch>
+			</Layout>
+		</>
+	);
 }
 
 export default App;
