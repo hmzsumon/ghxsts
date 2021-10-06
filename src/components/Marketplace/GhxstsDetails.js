@@ -61,34 +61,35 @@ const GhxstsDetails = () => {
 				<table class='table '>
 					<thead>
 						<tr>
-							<th scope='col'>First</th>
-							<th scope='col'>Last</th>
-							<th scope='col'>Handle</th>
-							<th scope='col'>Handle</th>
-							<th scope='col'>Handle</th>
+							<th scope='col'>typw</th>
+							<th scope='col'>from</th>
+							<th scope='col'>to</th>
+							<th scope='col'>about</th>
+							<th scope='col'>Txn</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr className='tr_1'>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>@mdo</td>
-							<td>@mdo</td>
-							<td>@mdo</td>
+							<td>offer</td>
+							<td>052424242</td>
+							<td></td>
+							<td>1bnb</td>
+							<td>Mar 20, 2018</td>
 						</tr>
 						<tr className='tr_2'>
-							<td>Jacob</td>
-							<td>Thornton</td>
-							<td>@fat</td>
-							<td>@fat</td>
-							<td>@fat</td>
+							<td>sold</td>
+							<td>ox534334</td>
+							<td>ox534334</td>
+
+							<td>0.01 bnb</td>
+							<td>jun 23,2017</td>
 						</tr>
 						<tr className='tr_3'>
-							<td>Larry the Bird</td>
-							<td className='td_hide'>@twitter</td>
-							<td>@twitter</td>
-							<td>@twitter</td>
-							<td>@twitter</td>
+							<td>minted</td>
+							<td></td>
+							<td>ox534334</td>
+							<td>.05 bnb</td>
+							<td>jun23, 2017</td>
 						</tr>
 					</tbody>
 				</table>
